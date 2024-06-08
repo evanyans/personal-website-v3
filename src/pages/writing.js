@@ -1,14 +1,15 @@
 import * as React from "react"
-import NavBar from "./navbar"
-
+import NavBar from "../components/navbar"
+import Layout from "../components/layout"
 const WritingPage = () => {
   return (
-    <main class="container mx-auto px-10 pb-64  mt-16">
-      <NavBar />
-      <h1 class="font-semibold text-2xl mt-12">
-          my brain dump <span class="text-2xl">&nbsp;</span>
-        </h1>
-    </main>
+    <Layout>
+      <main >
+        <h1 class="font-semibold text-2xl mt-12">
+            my brain dump <span class="text-2xl">&nbsp;</span>
+          </h1>
+      </main>
+    </Layout>
   )
 }
 

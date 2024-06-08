@@ -1,5 +1,5 @@
 import * as React from "react";
-import NavBar from "./navbar.js";
+import NavBar from "../components/navbar.js";
 import Waterloo from "../images/uwaterloo.png";
 import Laurier from "../images/laurier.png";
 import First from "../images/FIRST.png";
@@ -11,7 +11,7 @@ import Grouse from "../images/grouse.png";
 import Grad from "../images/grad.jpg";
 import Karting from "../images/karting.jpg";
 import Roboto from "../images/Roboto.png";
-
+import Layout from "../components/layout.js";
 import "leaflet/dist/leaflet.css";
 
 import { MapContainer, TileLayer } from "react-leaflet";
@@ -19,9 +19,9 @@ import { MapContainer, TileLayer } from "react-leaflet";
 const IndexPage = () => {
   const tileURL = process.env.GATSBY_MAP_ID;
   return (
-    <main id="about" class="container mx-auto px-10 pb-64  mt-16">
+    <Layout>
+    <main id="about" >
       {/* <Link to="/writing/">Writing</Link> */}
-      <NavBar />
       <div class="flex flex-col gap-4 mt-12">
         <h1 class="font-semibold text-2xl">
           Evan Yan <span class="text-2xl">&nbsp;</span>
@@ -102,6 +102,11 @@ const IndexPage = () => {
         </div>
       </div>
 
+      <div class="mt-24">
+        <h2 class="font-medium text-xl">Projects</h2>
+        
+      </div>
+    
       <div class="mt-24 ">
         <h2 class="font-medium text-xl">Experience</h2>
         <div class="flex flex-col gap-12 mt-8">
@@ -244,6 +249,7 @@ const IndexPage = () => {
         </p>
       </div>
     </main>
+    </Layout>
   );
 };
 
