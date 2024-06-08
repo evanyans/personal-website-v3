@@ -225,6 +225,7 @@ const IndexPage = () => {
           </a>{" "}
           on Instagram if you want to meet up.
         </p>
+
         <MapContainer
           center={[43.4723, -80.5449]}
           zoom={13}
@@ -237,6 +238,7 @@ const IndexPage = () => {
             url={tileURL}
           />
         </MapContainer>
+
         <p class="mt-6">
           For professional inquiries, reach me at{" "}
           <a
