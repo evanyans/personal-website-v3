@@ -1,10 +1,13 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import NavBar from "./navbar"
 
 const WritingPage = () => {
   return (
-    <main>
-      sadads
+    <main class="container mx-auto px-4 pb-64  mt-16">
+      <NavBar />
+      <h1 class="font-semibold text-2xl mt-12">
+          my brain dump <span class="text-2xl">&nbsp;</span>
+        </h1>
     </main>
   )
 }
@@ -12,3 +15,4 @@ const WritingPage = () => {
 export default WritingPage
 
 export const Head = () => <title>Evan Yan</title>
+

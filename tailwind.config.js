@@ -11,10 +11,16 @@ module.exports = {
         padding: '2rem', // Optional: Adds padding around the container
         screens: {
           sm: '100%', // Change these values to adjust max-width
-          md: '720px',
-          lg: '720px',
-          xl: '720px',
+          md: '680px',
+          lg: '680px',
+          xl: '680px',
         },
+      },
+      scale: {
+        '55': '0.55',
+        '65': '0.65',
+        '70': '0.7',
+        '80': '0.80',
       },
     },
   },
