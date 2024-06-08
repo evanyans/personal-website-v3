@@ -19,7 +19,7 @@ import { MapContainer, TileLayer } from "react-leaflet";
 const IndexPage = () => {
   const tileURL = process.env.GATSBY_MAP_ID;
   return (
-    <main id="about" class="container mx-auto px-4 pb-64  mt-16">
+    <main id="about" class="container mx-auto px-10 pb-64  mt-16">
       {/* <Link to="/writing/">Writing</Link> */}
       <NavBar />
       <div class="flex flex-col gap-4 mt-12">
@@ -60,21 +60,21 @@ const IndexPage = () => {
       <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-12">
         <div class="col-span-1 row-span-1">
           <img
-            class="h:48 md:h-48 w-full  object-cover rounded-lg"
+            class="h-36 md:h-48 w-full object-cover rounded-lg"
             src={Grouse}
             alt=""
           />
         </div>
-        <div class="col-span-1 row-span-2">
+        <div class="col-span-1 row-span-2 md:row-span-2">
           <img
-            class="h-72 w-full  object-cover rounded-lg"
+            class="h-72 md:h-72 w-full  object-cover rounded-lg"
             src={Roboto}
             alt=""
           />
         </div>
         <div class="col-span-1 row-span-1">
           <img
-            class="md:h-48 w-full  object-cover rounded-lg"
+            class="h-32 md:h-48 w-full  object-cover rounded-lg"
             src={Western}
             alt=""
           />
@@ -86,16 +86,16 @@ const IndexPage = () => {
             alt=""
           />
         </div>
-        <div class="col-span-1 row-span-2">
+        <div class="col-span-1 row-span-1 md:row-span-2">
           <img
-            class="h-72 w-full object-cover rounded-lg"
+            class="h-36 md:h-72 w-full object-cover rounded-lg"
             src={Karting}
             alt=""
           />
         </div>
         <div class="col-span-1 row-span-1">
           <img
-            class="h-48 w-full object-cover rounded-lg"
+            class="h-32 md:h-48 w-full object-cover rounded-lg"
             src={Hawk}
             alt=""
           />

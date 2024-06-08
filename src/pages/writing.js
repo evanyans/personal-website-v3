@@ -3,7 +3,7 @@ import NavBar from "./navbar"
 
 const WritingPage = () => {
   return (
-    <main class="container mx-auto px-4 pb-64  mt-16">
+    <main class="container mx-auto px-10 pb-64  mt-16">
       <NavBar />
       <h1 class="font-semibold text-2xl mt-12">
           my brain dump <span class="text-2xl">&nbsp;</span>
