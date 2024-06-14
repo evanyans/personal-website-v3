@@ -13,7 +13,7 @@ module.exports = {
   plugins: [{
     resolve: 'gatsby-source-datocms',
     options: {
-      "apiToken": "8c7a783037c7a4bf897b68197e3583"
+      "apiToken":process.env.DATO_API_KEY
     }
   }, "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-postcss",
   {
@@ -21,7 +21,14 @@ module.exports = {
     options: {
       linkStyles: true // (default: true) Enable/disable loading stylesheets via CDN
     }
-  }
+  },    
+  {
+    resolve: `gatsby-plugin-google-analytics`,
+    options: {
+      trackingId: "YOUR_GOOGLE_ANALYTICS_TRACKING_ID",
+    },
+  },
+  
 
 ]
 };
