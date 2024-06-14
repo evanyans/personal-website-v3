@@ -1,18 +1,21 @@
 import React from "react";
 import { graphql } from "gatsby";
 import ReactMarkdown from "react-markdown";
+import Layout from "../../components/layout";
 
 export default function Article({ data: { article } }) {
   return (
-    <main>
-      <header>
-        <h1>{article.title}</h1>
-        <p>{article.date}</p>
-      </header>
-      <article>
+    <Layout>
+      <h1 class="font-semibold text-2xl mt-12">
+        {article.title}
+      </h1>
+      <h2>
+        {article.date}
+      </h2>
+      <article class="mt-6">
         <ReactMarkdown>{article.content}</ReactMarkdown>
       </article>
-    </main>
+    </Layout>
   );
 }
 
