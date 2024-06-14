@@ -1,5 +1,4 @@
 import * as React from "react";
-import NavBar from "../components/navbar.js";
 import Waterloo from "../images/uwaterloo.png";
 import Laurier from "../images/laurier.png";
 import First from "../images/FIRST.png";

@@ -1,17 +1,42 @@
 import * as React from "react"
-import NavBar from "../components/navbar"
 import Layout from "../components/layout"
-const WritingPage = () => {
+import { graphql } from "gatsby"
+import { Link } from "gatsby"
+
+const WritingPage = ({data}) => {
   return (
     <Layout>
       <main >
         <h1 class="font-semibold text-2xl mt-12">
             my brain dump <span class="text-2xl">&nbsp;</span>
-          </h1>
+        </h1>
+        <ul class="mt-6">
+          {data.allDatoCmsArticle.nodes.map(post => (
+            <Link to={`/writing/${post.slug}`}>
+            <li key={post.id}>
+              <h2 class="text-white">{post.title}</h2>
+              <p>{post.date}</p>
+            </li>
+            </Link>
+          ))}
+        </ul>
+        
       </main>
     </Layout>
   )
 }
+
+export const query = graphql`
+{
+  allDatoCmsArticle {
+    nodes {
+      id
+      title
+      slug
+      date
+    }
+  }
+}`
 
 export default WritingPage
 
