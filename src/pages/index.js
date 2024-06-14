@@ -140,6 +140,18 @@ const IndexPage = () => {
                 Generate tailored playlists based on emotion
               </p>
             </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://ftc-events.firstinspires.org/team/16031"
+                class="-ml-2 font-medium text-white inline-block transition-all duration-300 ease-in-out px-2 py-1 rounded relative hover:bg-stone-800"
+              >
+                40lb Robot (x4)
+              </a>
+              <p class=" text-gray-400 re">
+                2x province winning semi-autonomous robot, world championship contender
+              </p>
+            </div>
 
             
           </div>

@@ -12,8 +12,8 @@ const WritingPage = ({data}) => {
         </h1>
         <ul class="mt-6">
           {data.allDatoCmsArticle.nodes.map(post => (
-            <Link to={`/writing/${post.slug}`}>
-            <li key={post.id}>
+            <Link to={`/writing/${post.slug}`} key={post.id} >
+            <li class="mt-5">
               <h2 class="text-white">{post.title}</h2>
               <p>{post.date}</p>
             </li>
@@ -28,7 +28,7 @@ const WritingPage = ({data}) => {
 
 export const query = graphql`
 {
-  allDatoCmsArticle {
+  allDatoCmsArticle(sort: { date: DESC }) {
     nodes {
       id
       title

@@ -20,9 +20,10 @@ export default function Article({ data: { article } }) {
 }
 
 export const query = graphql`
-  query ArticleBySlug($slug: String!) {
+  query ($slug: String) {
     article: datoCmsArticle(slug: { eq: $slug }) {
       title
+      slug
       date
       content
     }
