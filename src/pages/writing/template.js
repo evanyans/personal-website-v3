@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql } from "gatsby";
-import ReactMarkdown from "react-markdown";
 import Layout from "../../components/layout";
 
 export default function Article({ data: { article } }) {
@@ -12,9 +11,10 @@ export default function Article({ data: { article } }) {
       <h2>
         {article.date}
       </h2>
-      <article class="mt-6">
-        <ReactMarkdown>{article.content}</ReactMarkdown>
-      </article>
+      <article
+        className="mt-6 prose dark:prose-invert"
+        dangerouslySetInnerHTML={{ __html: article.contentNode.childMarkdownRemark.html }}
+      />
     </Layout>
   );
 }
@@ -24,8 +24,12 @@ export const query = graphql`
     article: datoCmsArticle(slug: { eq: $slug }) {
       title
       slug
-      date
-      content
+      date(formatString: "MMMM DD, YYYY")
+      contentNode {
+        childMarkdownRemark {
+          html
+        }
+      }
     }
   }
 `;

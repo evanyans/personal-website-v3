@@ -33,7 +33,7 @@ export const query = graphql`
       id
       title
       slug
-      date
+      date(formatString: "MMMM DD, YYYY")
     }
   }
 }`
