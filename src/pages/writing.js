@@ -8,7 +8,7 @@ const WritingPage = ({data}) => {
     <Layout>
       <main >
         <h1 class="font-semibold text-2xl mt-12">
-            my brain dump <span class="text-2xl">&nbsp;</span>
+            my brain dump (hot takes, no filters) <span class="text-2xl">&nbsp;</span>
         </h1>
         <ul class="mt-6">
           {data.allDatoCmsArticle.nodes.map(post => (
