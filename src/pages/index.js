@@ -107,13 +107,13 @@ const IndexPage = () => {
           <div>
               <a
                 target="_blank"
-                href="https://github.com/evanyans/tina"
+                href="https://github.com/evanyans/tunescriber"
                 class="-ml-2 font-medium text-white inline-block transition-all duration-300 ease-in-out px-2 py-1 rounded relative hover:bg-stone-800"
               >
-                Tina
+                TuneScriber
               </a>
               <p class=" text-gray-400 re">
-                News headline aggregator that provides sentiment insights
+                Convert entire songs to sheet music for each instrument.
               </p>
             </div>
           <div>
