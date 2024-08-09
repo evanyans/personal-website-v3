@@ -113,7 +113,7 @@ const IndexPage = () => {
                 TuneScriber
               </a>
               <p class=" text-gray-400 re">
-                Convert entire songs to sheet music for each instrument.
+                Convert entire songs to sheet music for each instrument
               </p>
             </div>
           <div>
