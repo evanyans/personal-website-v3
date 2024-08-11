@@ -10,7 +10,14 @@ module.exports = {
     title: `personal-website-v3`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: [{
+  plugins: [
+  {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        "icon": "src/images/logo.png"
+      }
+  },
+  {
     resolve: 'gatsby-source-datocms',
     options: {
       "apiToken": "8c7a783037c7a4bf897b68197e3583"
