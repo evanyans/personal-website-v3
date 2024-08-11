@@ -7,7 +7,9 @@ const NavBar = () => {
       <div class="flex flex-row gap-6 font-light">
           <Link to="/">About</Link>
           <Link to="/writing/">Writing</Link>
-          <Link to="/writing/">Resume (WIP)</Link>
+          <a href="../static/Evan_Yan_Resume.pdf" target="_blank" rel="noopener noreferrer">
+            Resume
+          </a>
       </div>
     </main>
   )
