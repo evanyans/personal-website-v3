@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../components/layout";
+import './style.css'
 
 export default function Article({ data: { article } }) {
   return (
@@ -12,7 +13,7 @@ export default function Article({ data: { article } }) {
         {article.date}
       </h2>
       <article
-        className="mt-6 prose dark:prose-invert"
+        className="mt-6 prose dark:prose-invert article-content"
         dangerouslySetInnerHTML={{ __html: article.contentNode.childMarkdownRemark.html }}
       />
     </Layout>

@@ -1,0 +1,8 @@
+.article-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Example: Adding rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Example: Adding a subtle shadow */
+    margin: 20px 0; /* Example: Adding space around images */
+  }
+  

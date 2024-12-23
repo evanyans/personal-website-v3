@@ -12,6 +12,7 @@ import Karting from "../images/karting.jpg";
 import Roboto from "../images/Roboto.png";
 import Layout from "../components/layout.js";
 import "leaflet/dist/leaflet.css";
+import Ford from "../images/ford.png"
 
 import { MapContainer, TileLayer } from "react-leaflet";
 
@@ -27,7 +28,18 @@ const IndexPage = () => {
           </h1>
           <p>
             I'm a designer, gamer and engineer from Vancouver. I'm currently
-            working as an AI Software Developer Intern at the{" "}
+            working as a Software Developer Intern at {" "}
+            <a
+              href="https://www.ford.ca/"
+              target="_blank"
+              class="text-white underline underline-offset-4 decoration-gray-600 decoration-2"
+            >
+              Ford Motor Company
+            </a>
+            , where I'm developing voice controls in the car entertainment systems.
+          </p>
+          <p>
+            At my previous work term, I was working at the {" "}
             <a
               href="https://uwaterloo.ca/information-systems-technology/"
               target="_blank"
@@ -35,7 +47,7 @@ const IndexPage = () => {
             >
               University of Waterloo
             </a>
-            , where I'm building the next job portal for WaterlooWorks.
+            {" "}as an AI Software Developer Intern building an in-house job aggregation system for the school's co-op department.
           </p>
           <p>
             Before flying to Waterloo, I was competing in FIRST Robotics in Team
@@ -107,22 +119,34 @@ const IndexPage = () => {
           <div>
               <a
                 target="_blank"
+                href="https://github.com/evanyans/goosemeet"
+                class="-ml-2 font-medium text-white inline-block transition-all duration-300 ease-in-out px-2 py-1 rounded relative hover:bg-stone-800"
+              >
+                goosemeet
+              </a>
+              <p class=" text-gray-400 re">
+              Keep your team on track and your meetings in sync one honk at a time
+              </p>
+          </div>
+          <div>
+              <a
+                target="_blank"
                 href="https://github.com/evanyans/tunescriber"
                 class="-ml-2 font-medium text-white inline-block transition-all duration-300 ease-in-out px-2 py-1 rounded relative hover:bg-stone-800"
               >
-                TuneScriber
+                tunescriber
               </a>
               <p class=" text-gray-400 re">
                 Convert entire songs to sheet music for each instrument
               </p>
-            </div>
+          </div>
           <div>
               <a
                 target="_blank"
                 href="https://devpost.com/software/papers-please-clone"
                 class="-ml-2 font-medium text-white inline-block transition-all duration-300 ease-in-out px-2 py-1 rounded relative hover:bg-stone-800"
               >
-                Credit Crimes
+                credit-crimes
               </a>
               <p class=" text-gray-400 re">
                 "Papers, Please" inspired tax fraud detection game
@@ -134,7 +158,7 @@ const IndexPage = () => {
                 href="https://github.com/evanyans/spotify-uncovered"
                 class="-ml-2 font-medium text-white inline-block transition-all duration-300 ease-in-out px-2 py-1 rounded relative hover:bg-stone-800"
               >
-                Spotify Uncovered
+                spotify-uncovered
               </a>
               <p class=" text-gray-400 re">
                 Generate tailored playlists based on emotion
@@ -160,6 +184,26 @@ const IndexPage = () => {
         <div class="mt-24 ">
           <h2 class="font-medium text-xl">Experience</h2>
           <div class="flex flex-col gap-12 mt-8">
+          <div class="flex flex-row gap-6 ">
+              <a
+                href="https://www.ford.ca/"
+                target="_blank"
+                class="w-12 h-12 bg-amber-500 bg-opacity-50 rounded-md flex items-center justify-center overflow-hidden hover:bg-opacity-75 transition-all duration-300"
+              >
+                <img
+                  class="object-contain transform"
+                  src={Ford}
+                  alt="Default avatar"
+                />
+              </a>
+              <div class="flex flex-col">
+                <h3 class="text-white font-medium">Ford Motor Company</h3>
+                <p class="font-light">Software Developer</p>
+                <p class="font-light text-sm text-gray-400 mt-4">
+                  January 2025 - April 2025
+                </p>
+              </div>
+            </div>
             <div class="flex flex-row gap-6 ">
               <a
                 href="https://uwaterloo.ca/information-systems-technology/"
@@ -174,7 +218,7 @@ const IndexPage = () => {
               </a>
               <div class="flex flex-col">
                 <h3 class="text-white font-medium">University of Waterloo</h3>
-                <p class="font-light">AI Software Developer</p>
+                <p class="font-light">Software Developer</p>
                 <p class="font-light text-sm text-gray-400 mt-4">
                   May 2024 - Aug 2024
                 </p>
@@ -265,8 +309,7 @@ const IndexPage = () => {
         <div class="mt-24">
           <h2 class="font-medium text-xl mb-6">Where am I?</h2>
           <p class="mb-8">
-            Stuck in Waterloo. Looking forward to Formula 1 weekends. Adding to
-            my cookbook.
+            Working remotely from Coquitlam. Enjoying the scenery. Eating good food.
             <br></br>Reach me{" "}
             <a
               href="https://www.instagram.com/okeyevan/"
@@ -279,7 +322,7 @@ const IndexPage = () => {
           </p>
 
           <MapContainer
-            center={[43.4723, -80.5449]}
+            center={[49.2838, -122.7932]}
             zoom={13}
             zoomControl={false}
             scrollWheelZoom={true}
