@@ -27,8 +27,9 @@ const IndexPage = () => {
             Evan Yan <span class="text-2xl">&nbsp;</span>
           </h1>
           <p>
-            I'm a designer, gamer and engineer from Vancouver. I'm currently
-            working as a Software Developer Intern at {" "}
+            I'm a designer, gamer and engineer from Vancouver. I'm currently back at  school studying
+            Computer Science at the University of Waterloo. I've previously worked 
+            as a Software Developer Intern at {" "}
             <a
               href="https://www.ford.ca/"
               target="_blank"
@@ -36,7 +37,7 @@ const IndexPage = () => {
             >
               Ford Motor Company
             </a>
-            , where I'm developing voice controls in the car entertainment systems.
+            , where I developed voice controls in the car entertainment systems and built it's proprietary calendar app.
           </p>
           <p>
             At my previous work term, I was working at the {" "}
@@ -284,26 +285,8 @@ const IndexPage = () => {
                 <p class="font-light text-sm text-gray-400 mt-4">2023 - 2028</p>
               </div>
             </div>
-            <div class="flex flex-row gap-6">
-              <a
-                href="https://uwaterloo.ca/future-students/programs/business-administration-computer-science-double-degree"
-                target="_blank"
-                class="w-12 h-12 bg-purple-500 bg-opacity-50 rounded-md flex items-center justify-center overflow-hidden hover:bg-opacity-75 transition-all duration-300"
-              >
-                <img
-                  class="object-contain transform scale-90"
-                  src={Laurier}
-                  alt="Default avatar"
-                />
-              </a>
-              <div class="flex flex-col">
-                <h3 class="text-white font-medium">
-                  Wilfrid Laurier University
-                </h3>
-                <p class="font-light">Bachelor of Business Administration</p>
-                <p class="font-light text-sm text-gray-400 mt-4">2023 - 2028</p>
-              </div>
-            </div>
+            {/* <div class="flex flex-row gap-6">
+            </div> */}
           </div>
         </div>
         <div class="mt-24">
