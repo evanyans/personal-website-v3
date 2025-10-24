@@ -282,7 +282,7 @@ const IndexPage = () => {
               <div class="flex flex-col">
                 <h3 class="text-white font-medium">University of Waterloo</h3>
                 <p class="font-light">Bachelor of Computer Science</p>
-                <p class="font-light text-sm text-gray-400 mt-4">2023 - 2028</p>
+                <p class="font-light text-sm text-gray-400 mt-4">2023 - 2027</p>
               </div>
             </div>
             {/* <div class="flex flex-row gap-6">
